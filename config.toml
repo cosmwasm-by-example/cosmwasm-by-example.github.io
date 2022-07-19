@@ -1,4 +1,4 @@
-baseURL = '/'
+baseURL = 'https://cosmwasm-by-example.github.io/'
 languageCode = 'en-us'
 title = 'CosmWasm by Example'
 theme = "paper"
