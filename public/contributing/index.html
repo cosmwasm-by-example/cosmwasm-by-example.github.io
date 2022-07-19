@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="not-ready text-sm lg:text-base" lang="en-us">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  
+  <title>Contributing to this website - CosmWasm by Example</title>
+
+  
+  <meta name="theme-color" />
+  
+  <meta name="description" content="Repository to contribute in: (abhinavmir/cosmwasm-by-example)[https://github.com/AbhinavMir/cosmwasm-by-example]
+The website aims to be open source and quick to launch. We use Hugo { is super easy to install! } to generate the website. The website is deployed via Vercel from the build repository. To see open issues, head over to issues and filter by tag. Refer to the template here.
+Here is how you contribute, clone the repository and create a file in contents/post with the following sections at minimum: content." />
+  <meta name="author" content="" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="/main.min.css" />
+
+  
+  <script
+    defer
+    src="/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+  <link
+    rel="preload"
+    as="image"
+    href="/theme.%7B%7B%20if%20site.Params.monoDarkIcon%20%7D%7Dsvg%7B%7B%20else%20%7D%7Dpng%7B%7B%20end%20%7D%7D"
+  />
+
+  
+  
+  
+  
+
+  
+
+  
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.101.0" />
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="Contributing to this website" />
+<meta property="og:description" content="Repository to contribute in: (abhinavmir/cosmwasm-by-example)[https://github.com/AbhinavMir/cosmwasm-by-example]
+The website aims to be open source and quick to launch. We use Hugo { is super easy to install! } to generate the website. The website is deployed via Vercel from the build repository. To see open issues, head over to issues and filter by tag. Refer to the template here.
+Here is how you contribute, clone the repository and create a file in contents/post with the following sections at minimum: content." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/contributing/" /><meta property="article:section" content="" />
+
+
+
+
+  
+  <meta itemprop="name" content="Contributing to this website">
+<meta itemprop="description" content="Repository to contribute in: (abhinavmir/cosmwasm-by-example)[https://github.com/AbhinavMir/cosmwasm-by-example]
+The website aims to be open source and quick to launch. We use Hugo { is super easy to install! } to generate the website. The website is deployed via Vercel from the build repository. To see open issues, head over to issues and filter by tag. Refer to the template here.
+Here is how you contribute, clone the repository and create a file in contents/post with the following sections at minimum: content.">
+
+<meta itemprop="wordCount" content="185">
+<meta itemprop="keywords" content="" />
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Contributing to this website"/>
+<meta name="twitter:description" content="Repository to contribute in: (abhinavmir/cosmwasm-by-example)[https://github.com/AbhinavMir/cosmwasm-by-example]
+The website aims to be open source and quick to launch. We use Hugo { is super easy to install! } to generate the website. The website is deployed via Vercel from the build repository. To see open issues, head over to issues and filter by tag. Refer to the template here.
+Here is how you contribute, clone the repository and create a file in contents/post with the following sections at minimum: content."/>
+
+  
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[5rem] max-w-3xl px-8 lg:justify-center">
+  <div class="relative z-50 mr-auto flex items-center">
+    <a class="-translate-x-[1px] -translate-y-0.5 text-3xl font-bold" href="/"
+      >CosmWasm by Example</a
+    >
+    <a
+      class="btn-dark ml-6 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+    ></a>
+  </div>
+
+  <a
+    class="btn-menu relative z-50 -mr-8 flex h-[5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+  ></a>
+
+  <script>
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const htmlClass = document.documentElement.classList;
+    requestAnimationFrame(() => {
+      htmlClass.remove('not-ready');
+    });
+
+    const setDark = (newDark) => {
+      metaTheme.setAttribute('content', newDark ? '#000' : '#FCFAF9');
+      htmlClass[newDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', newDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    const darkVal = localStorage.getItem('dark');
+    setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+
+    
+  </div>
+</header>
+
+
+    <main
+      class="prose prose-zinc relative mx-auto min-h-[calc(100%-10rem)] max-w-3xl px-8 pt-16 pb-40 dark:prose-invert"
+    >
+      
+
+<article>
+  <header class="mb-16">
+    <h1 class="!my-0 pb-2">Contributing to this website</h1>
+
+    
+  </header>
+
+  <section><p>Repository to contribute in: (abhinavmir/cosmwasm-by-example)[https://github.com/AbhinavMir/cosmwasm-by-example]</p>
+<p>The website aims to be open source and quick to launch. We use <a href="https://gethugo.io">Hugo</a> { is super easy to install! } to generate the website. The website is deployed via Vercel from the build repository. To see open issues, head over to <a href="https://github.com/AbhinavMir/cosmwasm-by-example/issues">issues</a> and filter by tag. Refer to the template <a href="./template">here</a>.</p>
+<p>Here is how you contribute, clone the repository and create a file in <code>contents/post</code> with the following sections at minimum: <code>content.rs</code>, <code>msg.rs</code> and <code>state.rs</code> - throw in a README for better readability if you&rsquo;re feeling generous. Add in your content as needed.</p>
+<p>Use <code>hugo server -D</code> to see if everything is as you like it. Once confirmed, you can <a href="https://opensource.com/article/19/7/create-pull-request-github">open a PR</a>. Other users can have a look and comment, but I should be able to review and merge a good PR within ~48 hours!</p>
+<p>You can also apply to be a collaborator via mail { <a href="mailto:abhinavmir@protonmail.com">abhinavmir@protonmail.com</a> } - I&rsquo;ll get back to you ASAP! Feel free to add your Cosmos address at the bottom of your example for users to donate to you.</p>
+<p>See you around, Cosmonaut.</p>
+</section>
+
+  
+  
+
+  
+  
+  
+
+  
+  
+</article>
+
+
+    </main>
+
+    <footer class="mx-auto flex h-[5rem] max-w-3xl items-center px-8 text-sm text-zinc-500">
+  <div class="mr-auto">
+    <a class="link" href="./contributing">🌎 Contributing</a></div>
+  </div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank">Powered by Hugo️️</a
+  >️
+  <a class="link" href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank"
+    >Theme: Paper</a
+  >
+</footer>
+
+  </body>
+</html>
